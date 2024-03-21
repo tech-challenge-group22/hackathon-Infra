@@ -41,7 +41,7 @@ module "rds" {
 }
 
 module dynamo {
-  dynamodb_name = "{var.dynamodb_name}"
+  dynamodb_name = "${var.dynamodb_name}"
   source = "./modules/dynamo"
 }
 
