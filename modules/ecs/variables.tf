@@ -69,3 +69,6 @@ variable secret_key_jwt_token {
 
 variable "ecr_url" {
 }
+
+variable "dynamodb_name" {
+}

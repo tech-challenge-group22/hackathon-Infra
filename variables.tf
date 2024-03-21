@@ -36,3 +36,6 @@ variable "secret_aws" {
 
 variable "secret_key_jwt_token" {
 }
+
+variable "dynamodb_name" {
+}

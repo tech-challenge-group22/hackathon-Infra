@@ -71,6 +71,7 @@ module "ecs" {
   execution_arn_role  = "${var.lab_role_arn}"
   rds_id              = "${module.rds.rds_id}"
   secret_key_jwt_token = "${var.secret_key_jwt_token}"
+  dynamodb_name        = "${var.dynamodb_name}"
   depends_on = [
     module.rds,
     module.dynamo,

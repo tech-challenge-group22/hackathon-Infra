@@ -62,6 +62,10 @@
       {
         "name": "DB_HOST",
         "value": "${db_host}"
+      },
+      {
+        "name": "DYNAMODB_NAME",
+        "value": "${dynamodb_name}"
       }
     ],
     "healthCheck": {

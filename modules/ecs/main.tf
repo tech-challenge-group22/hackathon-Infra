@@ -36,6 +36,7 @@ resource "aws_ecs_task_definition" "web" {
     access_key_aws = "${var.access_key_aws}"
     secret_aws = "${var.secret_aws}"
     secret_key_jwt_token = "${var.secret_key_jwt_token}"
+    dynamodb_name = "${var.dynamodb_name}"
   })
   requires_compatibilities = ["FARGATE"]
   network_mode             = "awsvpc"
