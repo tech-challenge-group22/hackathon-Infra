@@ -1,5 +1,5 @@
 resource "aws_dynamodb_table" "aws_products_tbl" {
-  name           = "appointments"
+  name           = "{var.dynamodb_name}"
   billing_mode   = "PROVISIONED"
   read_capacity  = 5
   write_capacity = 5
@@ -12,7 +12,7 @@ resource "aws_dynamodb_table" "aws_products_tbl" {
 
   attribute {
     name = "registry_number"
-    type = "S"
+    type = "N"
   }
 
   ttl {
