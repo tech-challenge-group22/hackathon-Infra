@@ -37,6 +37,9 @@ resource "aws_ecs_task_definition" "web" {
     secret_aws = "${var.secret_aws}"
     secret_key_jwt_token = "${var.secret_key_jwt_token}"
     dynamodb_name = "${var.dynamodb_name}"
+    nodemailer_port = "${var.nodemailer_port}"
+    nodemailer_user = "${var.nodemailer_user}"
+    nodemailer_pass = "${var.nodemailer_pass}"
   })
   requires_compatibilities = ["FARGATE"]
   network_mode             = "awsvpc"

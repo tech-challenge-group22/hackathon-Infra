@@ -39,3 +39,12 @@ variable "secret_key_jwt_token" {
 
 variable "dynamodb_name" {
 }
+
+variable "nodemailer_port" {
+}
+
+variable "nodemailer_user" {
+}
+
+variable "nodemailer_pass" {
+}

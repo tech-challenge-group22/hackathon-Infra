@@ -66,6 +66,18 @@
       {
         "name": "DYNAMODB_NAME",
         "value": "${dynamodb_name}"
+      },
+      {
+        "name": "NODEMAILER_PORT",
+        "value": "${nodemailer_port}"
+      },
+      {
+        "name": "NODEMAILER_USER",
+        "value": "${nodemailer_user}"
+      },
+      {
+        "name": "NODEMAILER_PASS",
+        "value": "${nodemailer_pass}"
       }
     ],
     "healthCheck": {

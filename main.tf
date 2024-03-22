@@ -73,6 +73,9 @@ module "ecs" {
   rds_id              = "${module.rds.rds_id}"
   secret_key_jwt_token = "${var.secret_key_jwt_token}"
   dynamodb_name        = "${var.dynamodb_name}"
+  nodemailer_port        = "${var.nodemailer_port}"
+  nodemailer_user        = "${var.nodemailer_user}"
+  nodemailer_pass        = "${var.nodemailer_pass}"
   depends_on = [
     module.rds,
     module.dynamo,

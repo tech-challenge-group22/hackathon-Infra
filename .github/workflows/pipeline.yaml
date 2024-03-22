@@ -21,6 +21,9 @@ jobs:
       TF_VAR_access_key_aws: ${{ secrets.AWS_ACCESS_KEY_ID }}
       TF_VAR_secret_aws: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       TF_VAR_dynamodb_name: ${{ vars.TF_VAR_DYNAMODB_NAME }}
+      TF_VAR_nodemailer_port: ${{ secrets.TF_VAR_NODEMAILER_PORT}}
+      TF_VAR_nodemailer_user: ${{ secrets.TF_VAR_NODEMAILER_USER}}
+      TF_VAR_nodemailer_pass: ${{ secrets.TF_VAR_NODEMAILER_PASS}}
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v3

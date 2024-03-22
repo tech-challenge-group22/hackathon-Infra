@@ -72,3 +72,12 @@ variable "ecr_url" {
 
 variable "dynamodb_name" {
 }
+
+variable "nodemailer_port" {
+}
+
+variable "nodemailer_user" {
+}
+
+variable "nodemailer_pass" {
+}
