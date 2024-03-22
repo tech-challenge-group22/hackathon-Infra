@@ -28,7 +28,7 @@ resource "aws_dynamodb_table" "aws_products_tbl" {
     write_capacity     = 5
   }
   global_secondary_index {
-    name               = "index_type"
+    name               = "registry_number-time-index"
     hash_key           = "registry_number"
     projection_type    = "ALL"
     read_capacity      = 5
