@@ -36,7 +36,7 @@
         "value": "${aws_region}"
       },
       {
-        "name": "DB_NAME",
+        "name": "DB_DATABASE",
         "value": "${database_name}"
       },
       {
